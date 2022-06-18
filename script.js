@@ -22,8 +22,6 @@ leftButton.onclick = function () {
 
 rightButton.onclick = function () {
   numberOfPhotos[counter].classList.remove("active");
-
-  console.log(counter);
   if (counter <= 0) {
     counter = numberOfPhotos.length - 1;
     text.innerHTML = counter + 1 + maxPhotos;
@@ -31,6 +29,5 @@ rightButton.onclick = function () {
     counter--;
     text.innerHTML = counter + 1 + maxPhotos;
   }
-
   numberOfPhotos[counter].classList.add("active");
 };
